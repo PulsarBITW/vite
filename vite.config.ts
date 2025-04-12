@@ -9,6 +9,9 @@ export default defineConfig({
     checker({
       typescript: {tsconfigPath: 'tsconfig.app.json'},
       eslint: {useFlatConfig: true, lintCommand: 'eslint .'},
+      stylelint: {
+        lintCommand: 'stylelint "**/*.css"',
+      },
       overlay: {
         position: 'tl',
       },

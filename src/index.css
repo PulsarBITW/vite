@@ -1,33 +1,29 @@
 html {
   font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-
-  width: 100%;
   height: 100%;
+  text-size-adjust: 100%;
+  width: 100%;
 }
 
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
   background-color: var(--gray-50);
   color: var(--gray-900);
-
-  width: 100%;
+  font-family: Roboto, sans-serif;
   height: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
+  max-width: 1280px;
   padding: 2rem;
   text-align: center;
 }
 
 :root {
   -webkit-tap-highlight-color: transparent;
+
   /* Grayscale */
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
