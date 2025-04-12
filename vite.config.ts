@@ -4,6 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  esbuild: {legalComments: 'none'},
   css: {
     modules: {
       generateScopedName: '[local]__[hash:base64:5]',
