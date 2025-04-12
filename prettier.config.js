@@ -7,7 +7,6 @@ const config = {
   trailingComma: 'all',
   singleQuote: true,
   arrowParens: 'always',
-  jsxBracketSameLine: false,
   bracketSpacing: false,
   printWidth: 100,
   endOfLine: 'auto',

@@ -8,9 +8,9 @@ export default defineConfig({
     react(),
     checker({
       typescript: {tsconfigPath: 'tsconfig.app.json'},
-      eslint: {useFlatConfig: true, lintCommand: 'eslint .'},
+      eslint: {lintCommand: 'eslint .', useFlatConfig: true},
       stylelint: {
-        lintCommand: 'stylelint "**/*.css"',
+        lintCommand: 'stylelint "**/*.{css,scss}"',
       },
       overlay: {
         position: 'tl',
