@@ -1,11 +1,16 @@
 import {defineConfig} from 'vite';
+import path from 'path';
 import react from '@vitejs/plugin-react';
 import checker from 'vite-plugin-checker';
-import path from 'path';
+import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [
     react(),
+    svgr({
+      svgrOptions: {exportType: 'default', ref: true, svgo: false, titleProp: true},
+      include: '**/*.svg',
+    }),
     checker({
       typescript: {tsconfigPath: 'tsconfig.app.json'},
       eslint: {lintCommand: 'eslint .', useFlatConfig: true},
@@ -23,6 +28,9 @@ export default defineConfig({
       generateScopedName: '[local]__[hash:base64:5]',
       localsConvention: 'camelCaseOnly',
     },
+  },
+  server: {
+    port: 3001,
   },
   resolve: {
     alias: {
